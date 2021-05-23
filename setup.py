@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
  
  
 setup(
-    name='treepy',
+    name='mytreepy',
     version='0.1',
     url='https://github.com/NoelBird/pytree',
     license='MIT',
