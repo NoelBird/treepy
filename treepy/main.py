@@ -8,6 +8,9 @@ class Tree:
         self.fileCount = 0
         self.targetLevel = target_level
 
+    def title(self, directory):
+        return os.path.basename(os.path.abspath(directory))
+
     def register(self, absolute):
         if os.path.isdir(absolute):
             self.dirCount += 1
@@ -49,6 +52,8 @@ def main():
         tree = Tree(args.L)
     else:
         tree = Tree()
+
+    print(tree.title(args.directory_list))
     tree.walk(args.directory_list)
     print("\n" + tree.summary())
 
