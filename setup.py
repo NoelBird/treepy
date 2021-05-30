@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
  
 setup(
     name='mytreepy',
-    version='0.1',
+    version='0.2',
     url='https://github.com/NoelBird/pytree',
     license='MIT',
     author='NoelBird',
